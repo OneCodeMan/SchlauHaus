@@ -68,7 +68,7 @@ class Lights extends Component {
   render() {
     return (
       <div className="Lights">
-        <h1 className="pageTitle">Your Lights</h1>
+        <h1 className="pageTitle">Lights</h1>
         
         {/* MOTION DETECTION MODE */}
         <hr />

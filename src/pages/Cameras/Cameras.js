@@ -50,7 +50,7 @@ class Cameras extends Component {
   render() {
     return (
       <div className="Cameras">
-        <h1 className="pageTitle">Your Cameras</h1>
+        <h1 className="pageTitle">Cameras</h1>
         
         {/* MOTION DETECTION MODE */}
         <hr />
