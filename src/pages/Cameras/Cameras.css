@@ -1,0 +1,8 @@
+.motionDetectionModeTitle {
+  text-align: center;
+}
+
+.switchContainer {
+  display: flex;
+  justify-content: center;
+}
