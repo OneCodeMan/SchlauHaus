@@ -24,9 +24,14 @@ class ModeToggleSwitch extends Component {
   render() {
     return (
       <div>
-        <h2 className="toggleSwitchTitle">
+        {this.props.title ? 
+          <h2 className="toggleSwitchTitle">
             {this.props.title}
-        </h2>
+          </h2>
+          :
+          ''
+        }
+        
         <label className="switchContainer">
             <Switch 
               className="switch"
@@ -58,10 +63,5 @@ class ModeToggleSwitch extends Component {
     );
   }
 }
-
-ModeToggleSwitch.defaultProps = {
-  onMessage: 'ON',
-  offMessage: 'OFF',
-};
 
 export default ModeToggleSwitch;

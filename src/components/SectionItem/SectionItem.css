@@ -1,0 +1,32 @@
+.sectionItem {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sectionItem:hover {
+  background:rgb(127, 123, 130, 0.5);
+}
+
+.sectionItemBackgroundContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionItemBackground {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.sectionItemTitle {
+  text-align: center;
+}
+
+.status {
+  font-weight: 600;
+}
+
+.info {
+  font-size: 12px;
+  font-style: italic;
+}
