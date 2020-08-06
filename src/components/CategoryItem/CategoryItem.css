@@ -8,6 +8,10 @@
   cursor: pointer;
 }
 
+.categoryItem:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .symbol {
   width: 70px;
   height: 70px;
