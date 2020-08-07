@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import '../styles.css';
 import './Cameras.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -38,24 +40,13 @@ const mockSectionItemsKitchen = [
   },
 ];
 
-const mockCameraDetails = [
-  {
-    date: "May 28, 2020",
-    info: "Activity detected at 00:32"
-  },
-  {
-    date: "May 21, 2020",
-    info: "Activity detected at 11:22"
-  }
-];
-
 const sectionItemsOnBackgroundColour = "#9F2042";
 
 class Cameras extends Component {
 
   constructor() {
     super();
-    this.state = { checked: true };
+    this.state = { checked: true, displayModal: false };
   }
 
   render() {
@@ -89,6 +80,14 @@ class Cameras extends Component {
           sectionItems={mockSectionItemsKitchen}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+        <hr />
+        <div className="otherFunctions">
+          <Link to="/camera-detail">
+            <Button variant="dark">
+              Camera Detail
+            </Button>
+          </Link>
+        </div>
       </div>
     );
   }

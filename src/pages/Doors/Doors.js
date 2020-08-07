@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import '../styles.css';
 import './Doors.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -45,12 +47,24 @@ class Doors extends Component {
         </div>
 
         <hr />
+
         {/* SECTIONS */}
         <Section 
           title="Upstairs"
           sectionItems={mockSectionItemsMelissa}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+
+        <hr />  
+        <div className="otherFunctions">
+          <Link to="/door-detail">
+            <Button variant="dark">
+              Door Detail
+            </Button>
+          </Link>
+        </div>
+
+
       </div>
     );
   }
