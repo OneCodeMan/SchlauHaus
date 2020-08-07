@@ -63,7 +63,7 @@ class IrrigationDetail extends Component {
           <h4 className="tertiaryTitle textCenter">Duration</h4>
           <div className="durationSettings textCenter">
             <div className={`timeSetting ${isScheduled}`}>
-              <input type="time" disabled={isDisabled}/>
+              <input type="time"/>
               <p className="label">Time</p>
             </div>
             <div className="minutesSetting">
