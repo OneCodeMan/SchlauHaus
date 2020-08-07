@@ -44,26 +44,26 @@ class Temperature extends Component {
         </div>
 
         <Modal show={this.state.displayModal} className="warningModal">
-        <Modal.Header>
-          <Modal.Title class="modalTitle modalText">
-            WARNING
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body class="modalText">
-          You are setting the temperature to {this.state.temperature == 1 ? this.state.temperature - 1 : this.state.temperature + 1}, an extreme setting.
-          Enter your password to proceed.
-          <br />
-          <input type="password" className="modalPassword" />
-        </Modal.Body>
-        <Modal.Footer className="modalFooter">
-          <Button variant="dark" onClick={this.handleClose}>
-            Confirm
-          </Button>
-          <Button variant="danger" onClick={this.handleClose}>
-            Cancel
-          </Button>
-        </Modal.Footer>
-      </Modal>
+          <Modal.Header>
+            <Modal.Title class="modalTitle modalText">
+              WARNING
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body class="modalText">
+            You are setting the temperature to {this.state.temperature == 1 ? this.state.temperature - 1 : this.state.temperature + 1}, an extreme setting.
+            Enter your password to proceed.
+            <br />
+            <input type="password" className="modalPassword" />
+          </Modal.Body>
+          <Modal.Footer className="modalFooter">
+            <Button variant="dark" onClick={this.handleClose}>
+              Confirm
+            </Button>
+            <Button variant="danger" onClick={this.handleClose}>
+              Cancel
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     );
   }

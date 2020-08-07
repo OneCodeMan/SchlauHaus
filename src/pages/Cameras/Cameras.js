@@ -26,8 +26,6 @@ const mockSectionItemsLivingRoom = [
   }
 ];
 
-const sectionItemsOnBackgroundColour = "#9F2042";
-
 const mockSectionItemsKitchen = [
   {
     title: 'Above Sink',
@@ -39,6 +37,19 @@ const mockSectionItemsKitchen = [
     offToast: 'Kitchen camera disabled!'
   },
 ];
+
+const mockCameraDetails = [
+  {
+    date: "May 28, 2020",
+    info: "Activity detected at 00:32"
+  },
+  {
+    date: "May 21, 2020",
+    info: "Activity detected at 11:22"
+  }
+];
+
+const sectionItemsOnBackgroundColour = "#9F2042";
 
 class Cameras extends Component {
 
