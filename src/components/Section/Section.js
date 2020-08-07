@@ -13,7 +13,9 @@ class Section extends Component {
   render() {
     return (
       <div className="section">
-        <h2 className="sectionTitle">{this.props.title}</h2>
+        <div className="sectionTitleWrapper">
+          <h2 className="sectionTitle">{this.props.title}</h2>
+        </div>
         <div className="sectionItems">
           {this.props.sectionItems.map((sectionItem) => 
             <SectionItem
@@ -28,6 +30,11 @@ class Section extends Component {
               offBackgroundColour={this.props.sectionItemsOffBackgroundColour}
             />
           )}
+          <SectionItem 
+            title="Add Section"
+            onClick={() => alert('hi')}
+            onStatus=""
+          />
         </div>
       </div>
     );
