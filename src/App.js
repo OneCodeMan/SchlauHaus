@@ -28,6 +28,7 @@ function App() {
 
         {/* Other shit (details, forms, etc.) */}
         <Route path="/camera-detail" component={CameraDetail} />
+
         <Route path="/door-detail" component={DoorDetail} />
 
 
