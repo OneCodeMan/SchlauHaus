@@ -9,7 +9,7 @@ class Temperature extends Component {
 
   constructor() {
     super();
-    this.state = { temperature: 24, displayModal: true };
+    this.state = { temperature: 24, displayModal: false };
     this.increaseTemp = this.increaseTemp.bind(this);
     this.decreaseTemp = this.decreaseTemp.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -36,8 +36,8 @@ class Temperature extends Component {
   render() {
     return (
       <div className="Temperature">
-        <h1 class="pageTitle">Temperature</h1>
-        <h3 class="temperatureText">{this.state.temperature}°C</h3>
+        <h1 className="pageTitle">Temperature</h1>
+        <h3 className="temperatureText">{this.state.temperature}°C</h3>
         <div className="buttonControls">
           <button className="temp-button" onClick={this.decreaseTemp} id="decrease-temp-btn">-</button>
           <button className="temp-button" onClick={this.increaseTemp} id="increase-temp-btn">+</button>
