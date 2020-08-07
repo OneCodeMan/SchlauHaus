@@ -1,0 +1,21 @@
+.daySetting {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.dayWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.day {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.checkboxInput {
+  width: 40px;
+  height: 40px;
+}

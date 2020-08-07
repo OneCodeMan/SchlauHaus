@@ -5,10 +5,7 @@ import Switch from 'react-switch';
 import Button from 'react-bootstrap/Button';
 import '../../details.css';
 import './IrrigationDetail.css';
-
-const fadeStyle = {
-  opacity: '0.5'
-};
+import FrequencyWeek from '../../../components/FrequencyWeek/FrequencyWeek';
 
 class IrrigationDetail extends Component {
   constructor() {
@@ -22,6 +19,8 @@ class IrrigationDetail extends Component {
   }
 
   render() {
+    const isScheduled = this.state.checked ? 'normal' : 'fadeOut';
+    const isDisabled = this.state.checked ? 'false' : 'true';
     return (
       <div className="irrigationDetail">
 
@@ -52,28 +51,10 @@ class IrrigationDetail extends Component {
         <div className="frequencyDiv">
           <h4 className="tertiaryTitle textCenter">Frequency</h4>
           <div className="frequencySelection">
-            <div className="daySetting">
-
-
-              <div className="dayWrapper">
-                <div className="check">
-                  ✅
-                </div>
-                <div className="day">
-                  <p>M</p>
-                </div>
-              </div>
-
-              <div className="dayWrapper">
-                <div className="check">
-                  ✅
-                </div>
-                <div className="day">
-                  <p>T</p>
-                </div>
-              </div>
-              
-
+            <div className={`daySetting ${isScheduled}`}>
+              <FrequencyWeek
+                disabled={isDisabled}
+              />
             </div>
           </div>
         </div>
@@ -81,8 +62,8 @@ class IrrigationDetail extends Component {
         <div className="durationDiv">
           <h4 className="tertiaryTitle textCenter">Duration</h4>
           <div className="durationSettings textCenter">
-            <div className="timeSetting" style={fadeStyle}>
-              <input type="time" />
+            <div className={`timeSetting ${isScheduled}`}>
+              <input type="time" disabled={isDisabled}/>
               <p className="label">Time</p>
             </div>
             <div className="minutesSetting">
