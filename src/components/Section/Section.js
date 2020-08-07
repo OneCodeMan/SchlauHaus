@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Section.css';
 import '../styles.css';
 import SectionItem from '../SectionItem/SectionItem';
+import MockSectionItem from '../MockSectionItem/MockSectionItem';
 
 class Section extends Component {
 
@@ -30,10 +31,8 @@ class Section extends Component {
               offBackgroundColour={this.props.sectionItemsOffBackgroundColour}
             />
           )}
-          <SectionItem 
-            title="Add Section"
-            onClick={() => alert('hi')}
-            onStatus=""
+          <MockSectionItem 
+            title="Add"
           />
         </div>
       </div>

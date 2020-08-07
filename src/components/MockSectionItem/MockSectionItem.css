@@ -1,0 +1,38 @@
+.mockSectionItemBackground {
+  border-style: dotted;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.mockSectionItemTitle {
+  text-align: center;
+}
+
+.mockSectionItem {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.mockSectionItem:hover {
+  background:rgb(127, 123, 130, 0.5);
+}
+
+.mockSectionItemBackgroundContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.mockSectionItemToggle {
+  width: 70px;
+  height: 30px;
+  border-style: dotted;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.mockSectionItemPlusSpan {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
