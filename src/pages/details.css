@@ -1,5 +1,15 @@
 .otherFunctions {
   text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
   margin: 10px;
-  padding: 10px;
+}
+
+.backButton {
+  margin-top: 20px;
+  text-align: center;
 }

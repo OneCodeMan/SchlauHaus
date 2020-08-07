@@ -57,6 +57,14 @@ function CameraDetail() {
         </Button>
       </div>
 
+      <div className="backButton">
+        <Link to="/doors">
+          <Button variant="dark">
+            Back to Doors Page
+          </Button>
+        </Link>
+      </div>
+
     </div>
   );
 }

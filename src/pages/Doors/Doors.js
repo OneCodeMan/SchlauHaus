@@ -57,9 +57,14 @@ class Doors extends Component {
 
         <hr />  
         <div className="otherFunctions">
-          <Link to="/door-detail">
+          <Link to="/door-detail" className="link">
             <Button variant="dark">
               Door Detail
+            </Button>
+          </Link>
+          <Link to="/door-edit" className="link">
+            <Button variant="dark">
+              Door Edit
             </Button>
           </Link>
         </div>

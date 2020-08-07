@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../details.css';
 import './DoorDetail.css';
 
 function DoorDetail() {
@@ -23,6 +26,14 @@ function DoorDetail() {
           <p>• {detail.info}</p>
         </>
       ))}
+
+      <div className="backButton">
+        <Link to="/doors">
+          <Button variant="dark">
+            Back to Doors Page
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }
