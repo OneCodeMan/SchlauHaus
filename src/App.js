@@ -9,9 +9,10 @@ import Doors from './pages//Doors/Doors';
 import Lights from './pages/Lights/Lights';
 import Irrigation from './pages/Irrigation/Irrigation';
 import Temperature from './pages/Temperature/Temperature';
-import CameraDetail from './pages/CameraDetail/CameraDetail';
+import CameraDetail from './pages/Cameras/CameraDetail/CameraDetail';
 import DoorDetail from './pages/Doors/DoorDetail/DoorDetail';
 import DoorEdit from './pages/Doors/DoorEdit/DoorEdit';
+import IrrigationDetail from './pages/Irrigation/IrrigationDetail/IrrigationDetail';
 
 function App() {
   return (
@@ -33,8 +34,7 @@ function App() {
         <Route path="/door-detail" component={DoorDetail} />
         <Route path="/door-edit" component={DoorEdit} />
 
-
-        {/* <Route path="/irrigation-detail-thing" component={IrrigationDetail} /> */}
+        <Route path="/irrigation-detail" component={IrrigationDetail} />
 
       </Switch>
     </Router>

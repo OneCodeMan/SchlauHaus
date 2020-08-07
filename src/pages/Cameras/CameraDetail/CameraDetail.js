@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
-import '../details.css';
+import '../../details.css';
 import './CameraDetail.css';
 
 function toggleLive() {
@@ -52,15 +53,15 @@ function CameraDetail() {
       </div>
 
       <div className="otherFunctions">
-        <Button variant="dark" onClick={toggleLive} className="toggleButton">
+        <Button variant="primary" onClick={toggleLive} className="toggleButton">
           Toggle Live/Not Live
         </Button>
       </div>
 
       <div className="backButton">
-        <Link to="/doors">
+        <Link to="/cameras">
           <Button variant="dark">
-            Back to Doors Page
+            Back to Cameras Page
           </Button>
         </Link>
       </div>

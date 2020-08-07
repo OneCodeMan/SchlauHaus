@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import '../styles.css';
 import './Irrigation.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -86,6 +88,14 @@ class Irrigation extends Component {
           sectionItems={mockSectionItemsAddress2}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+        <hr />
+        <div className="otherFunctions">
+          <Link to="/irrigation-detail">
+            <Button variant="dark">
+              Irrigation Detail
+            </Button>
+          </Link>
+        </div>
       </div>
     );
   }

@@ -3,6 +3,8 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .link {
@@ -12,4 +14,5 @@
 .backButton {
   margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
