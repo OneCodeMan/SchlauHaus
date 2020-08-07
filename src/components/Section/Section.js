@@ -32,7 +32,7 @@ class Section extends Component {
             />
           )}
           <MockSectionItem 
-            title="Add"
+            title="Add Item"
           />
         </div>
       </div>
