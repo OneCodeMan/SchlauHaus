@@ -4,6 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Nav from './pages/Nav/Nav';
 import Main from './pages/Main/Main';
+import Intro from './pages/Main/Intro/Intro';
+import RegistrationForm from './pages/Main/RegistrationForm/RegistrationForm';
+import LoginForm from './pages/Main/LoginForm/LoginForm';
 import Cameras from './pages/Cameras/Cameras';
 import Doors from './pages//Doors/Doors';
 import Lights from './pages/Lights/Lights';
@@ -35,6 +38,11 @@ function App() {
         <Route path="/door-edit" component={DoorEdit} />
 
         <Route path="/irrigation-detail" component={IrrigationDetail} />
+
+        <Route path="/intro" component={Intro} />
+
+        <Route path="/registration-form" component={RegistrationForm} />
+        <Route path="/login-form" component={LoginForm} />
 
       </Switch>
     </Router>

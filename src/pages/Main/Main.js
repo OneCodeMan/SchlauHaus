@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../styles.css';
 import './Main.css';
 import CategoryItem from '../../components/CategoryItem/CategoryItem';
+import Button from 'react-bootstrap/Button';
 
 function Main() {
   const linkStyle = {
@@ -30,6 +31,26 @@ function Main() {
           </Link>
           <Link to="/temperature" style={linkStyle}>
             <CategoryItem title="Temperature" color="red" />
+          </Link>
+        </div>
+        <hr />
+        <div className="otherFunctions">
+          <Link to="/intro">
+            <Button variant="dark" className="link">
+              Intro
+            </Button>
+          </Link>
+
+          <Link to="/registration-form">
+            <Button variant="dark" className="link">
+              Registration Form
+            </Button>
+          </Link>
+
+          <Link to="/login-form">
+            <Button variant="dark" className="link">
+              Login Form
+            </Button>
           </Link>
         </div>
     </div>
