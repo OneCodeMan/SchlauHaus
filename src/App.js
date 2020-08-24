@@ -16,6 +16,8 @@ import CameraDetail from './pages/Cameras/CameraDetail/CameraDetail';
 import DoorDetail from './pages/Doors/DoorDetail/DoorDetail';
 import DoorEdit from './pages/Doors/DoorEdit/DoorEdit';
 import IrrigationDetail from './pages/Irrigation/IrrigationDetail/IrrigationDetail';
+import AddSection from './pages/Lights/AddSection/AddSection';
+import AddLight from './pages/Lights/AddLight/AddLight';
 
 function App() {
   return (
@@ -32,6 +34,9 @@ function App() {
         <Route path="/temperature" component={Temperature} />
 
         {/* Other shit (details, forms, etc.) */}
+        <Route path="/lights-add-section" component={AddSection} />
+        <Route path="/lights-add-light" component={AddLight} />
+
         <Route path="/camera-detail" component={CameraDetail} />
 
         <Route path="/door-detail" component={DoorDetail} />

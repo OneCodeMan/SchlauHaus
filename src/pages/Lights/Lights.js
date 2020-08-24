@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../styles.css';
 import './Lights.css';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import ModeToggleSwitch from '../../components/ModeToggleSwitch/ModeToggleSwitch';
 import Section from '../../components/Section/Section';
 
@@ -106,6 +108,20 @@ class Lights extends Component {
           sectionItems={mockSectionItemsBackyard}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+
+        <div class="otherFunctions">
+          <Link to="/lights-add-section" className="link">
+              <Button variant="dark">
+                Add Section
+              </Button>
+            </Link>
+
+            <Link to="/lights-add-light" className="link">
+              <Button variant="dark">
+                Add Light
+              </Button>
+            </Link>
+        </div>
       </div>
     );
   }

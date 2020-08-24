@@ -6,16 +6,27 @@ import Button from 'react-bootstrap/Button';
 import '../../details.css';
 import './IrrigationDetail.css';
 import FrequencyWeek from '../../../components/FrequencyWeek/FrequencyWeek';
+import Modal from 'react-bootstrap/Modal';
 
 class IrrigationDetail extends Component {
   constructor() {
     super();
-    this.state = { checked: true };
+    this.state = { checked: true, displayModal: false };
     this.handleChange = this.handleChange.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+    this.openModal = this.openModal.bind(this);
   }
 
   handleChange(checked) {
     this.setState({ checked });
+  }
+
+  handleClose() {
+    this.setState({ displayModal: false });
+  }
+
+  openModal() {
+    this.setState({ displayModal: true });
   }
 
   render() {
@@ -73,8 +84,32 @@ class IrrigationDetail extends Component {
           </div>
         </div>
 
+        <Modal show={this.state.displayModal} className="warningModal">
+          <Modal.Header>
+            <Modal.Title class="modalTitle modalText">
+              WARNING
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body class="modalText">
+            Please enter your password to proceed. 
+            We require this necessary step to avoid malicious usage.
+            <br />
+            <input type="password" className="modalPassword" />
+          </Modal.Body>
+          <Modal.Footer className="modalFooter">
+            <Link to="/irrigation">
+              <Button variant="dark">
+                Confirm
+              </Button>
+            </Link>
+            <Button variant="danger" onClick={this.handleClose}>
+              Cancel
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
         <div className="confirmButtonDiv textCenter">
-          <Button variant="primary">
+          <Button variant="primary" onClick={this.openModal}>
             Confirm
           </Button>
         </div>
