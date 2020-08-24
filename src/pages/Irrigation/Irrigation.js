@@ -82,12 +82,22 @@ class Irrigation extends Component {
           sectionItems={mockSectionItemsAddress1}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+        <Link to="/irrigation-detail">
+            <Button variant="dark">
+              Edit All Sprinklers
+            </Button>
+          </Link>
         <hr />
         <Section 
           title="Bernauer Str. 63-64, 13355"
           sectionItems={mockSectionItemsAddress2}
           sectionItemsOnBackgroundColour={sectionItemsOnBackgroundColour}
         />
+        <Link to="/irrigation-detail">
+            <Button variant="dark">
+              Edit All Sprinklers
+            </Button>
+          </Link>
         <hr />
         <div className="otherFunctions">
           <Link to="/irrigation-detail">
