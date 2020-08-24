@@ -22,14 +22,17 @@ class DoorEdit extends Component {
             <div className="timeDiv">
 
               <div className="time">
-                <label>Start: </label>
+                <label>Start (what time do you want to start monitoring the door?): </label>
+                <br />
                 <input type="time"></input>
               </div>
 
               <div className="time">
-                <label>End: </label>
+                <label>End (what time do you want to end monitoring the door?): </label>
+                <br />
                 <input type="time"></input>
               </div>
+              <br />
 
             </div> {/** End of time div */}
 

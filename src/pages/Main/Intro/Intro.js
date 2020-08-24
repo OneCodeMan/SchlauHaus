@@ -10,6 +10,10 @@ function Intro() {
         <h1 className="pageTitle">
           SchlauHaus
         </h1>
+        <p className="description">
+          To use SchlauHaus' services, you need to first register a user account. 
+          Please click Register to do so.
+        </p>
        <div className="register-buttons">
         <Link to="/registration-form">
           <Button variant="primary" className="auth-btn register-btn">

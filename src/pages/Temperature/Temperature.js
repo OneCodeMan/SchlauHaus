@@ -50,7 +50,8 @@ class Temperature extends Component {
           </Modal.Header>
           <Modal.Body class="modalText">
             You are setting the temperature to {this.state.temperature == 1 ? this.state.temperature - 1 : this.state.temperature + 1}, an extreme setting.
-            Enter your password to proceed.
+            We require this security measure to ensure that it isn't used maliciously.
+            Please enter your password to proceed.
             <br />
             <input type="password" className="modalPassword" />
           </Modal.Body>

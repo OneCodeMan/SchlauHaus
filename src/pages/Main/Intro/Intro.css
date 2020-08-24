@@ -9,3 +9,10 @@
   font-size: 25px;
   padding: 12px;
 }
+
+.description {
+  font-size: 30px;
+  width: 50%;
+  margin: 0 auto;
+  color: red;
+}

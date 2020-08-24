@@ -81,6 +81,10 @@ class Lights extends Component {
             onMessage="ON"
             offMessage="OFF"
           />
+          <p className="moreInfo">
+            If enabled, your lights will automatically turn on when motion is detected, 
+            and will turn off after one minute of not detecting motion.
+          </p>
         </div>
 
         <hr />
