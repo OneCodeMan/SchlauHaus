@@ -6,6 +6,7 @@ import './Cameras.css';
 import 'react-toastify/dist/ReactToastify.css';
 import ModeToggleSwitch from '../../components/ModeToggleSwitch/ModeToggleSwitch';
 import Section from '../../components/Section/Section';
+import ReactNotifications from 'react-browser-notifications';
 
 const mockSectionItemsLivingRoom = [
   {
@@ -47,6 +48,26 @@ class Cameras extends Component {
   constructor() {
     super();
     this.state = { checked: true, displayModal: false };
+    this.showNotifications = this.showNotifications.bind(this);
+    this.handleNotifClick = this.handleNotifClick.bind(this);
+  }
+
+  componentDidMount() {
+    setTimeout(
+      function() {
+          this.showNotifications();
+      }
+      .bind(this),
+      3000
+  );
+  }
+
+  showNotifications() {
+    if(this.n.supported()) this.n.show();
+  }
+
+  handleNotifClick(event) {
+    this.n.close(event.target.tag);
   }
 
   render() {
@@ -91,7 +112,19 @@ class Cameras extends Component {
               Camera Detail
             </Button>
           </Link>
+          <br />
+          <Button variant="dark" onClick={this.showNotifications}>
+            Trigger Motion Detected Notification
+          </Button>
         </div>
+
+        <ReactNotifications
+          onRef={ref => (this.n = ref)} // Required
+          title="Motion Detected!" // Required
+          body="Motion detected in the LIVING ROOM with the CORNER ABOVE PLANT camera"
+          icon="icon.jpg"
+          onClick={event => this.handleNotifClick(event)}
+        />
       </div>
     );
   }
