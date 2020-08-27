@@ -21,26 +21,30 @@ class DoorEdit extends Component {
 
             <div className="timeDiv">
 
-              <div className="time">
-                <label>Start (what time do you want to start monitoring the door?): </label>
-                <br />
-                <input type="time"></input>
-              </div>
+              <form>
+                <div className="time">
+                  <label>Start (what time do you want to start monitoring the door?): </label>
+                  <br />
+                  <input type="time" required />
+                </div>
 
-              <div className="time">
-                <label>End (what time do you want to end monitoring the door?): </label>
+                <div className="time">
+                  <label>End (what time do you want to end monitoring the door?): </label>
+                  <br />
+                  <input type="time" required />
+                </div>
                 <br />
-                <input type="time"></input>
-              </div>
-              <br />
+
+                <div className="buttonDiv">
+                  <Link to="/doors">
+                    <Button variant="primary">
+                      Edit
+                    </Button>
+                  </Link>
+                </div>
+              </form>
 
             </div> {/** End of time div */}
-
-            <div className="buttonDiv">
-              <Button variant="primary">
-                Edit
-              </Button>
-            </div>
 
             <div className="backButton">
               <Link to="/doors">
