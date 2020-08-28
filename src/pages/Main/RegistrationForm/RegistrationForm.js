@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../../styles.css';
 import './RegistrationForm.css';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 
 function RegistrationForm() {
   return (
@@ -12,26 +11,30 @@ function RegistrationForm() {
           SchlauHaus
         </h1>
        <div className="registration-form">
-        <form>
+        <form action="/">
           <label>First Name</label>
-          <input type="text" required />
+          <input type="text" placeholder="Enter your first name.." required />
 
           <label>Last Name</label>
-          <input type="text" required />
+          <input type="text" placeholder="Enter your last name.." required />
 
           <label>Email</label>
-          <input type="email" required />
+          <input type="email" placeholder="Enter your email.." required />
 
           <label>Confirm Email</label>
-          <input type="email" required />
+          <input type="email" placeholder="Confirm email.." required />
 
           <label>Password</label>
-          <input type="password" required />
+          <input type="password" placeholder="Enter password" required />
 
           <label>Confirm Password</label>
-          <input type="password" required />
+          <input type="password" placeholder="Confirm password" required />
 
-          <input type="submit" />
+          <div class="submit-div">
+            <Button type="submit" variant="secondary" className="link">
+              Register
+            </Button>
+          </div>
         </form>
        </div>
         <hr />
