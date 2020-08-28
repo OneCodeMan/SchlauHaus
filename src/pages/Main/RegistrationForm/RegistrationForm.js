@@ -19,16 +19,16 @@ function RegistrationForm() {
           <input type="text" placeholder="Enter your last name.." required />
 
           <label>Email</label>
-          <input type="email" placeholder="Enter your email.." required />
+          <input type="email" placeholder="Example: sterling@archer.ca" required />
 
           <label>Confirm Email</label>
           <input type="email" placeholder="Confirm email.." required />
 
           <label>Password</label>
-          <input type="password" placeholder="Enter password" required />
+          <input type="password" placeholder="Enter password" min="5" max="30" required />
 
           <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm password" required />
+          <input type="password" placeholder="Confirm password" min="5" max="30" required />
 
           <div class="submit-div">
             <Button type="submit" variant="secondary" className="link">

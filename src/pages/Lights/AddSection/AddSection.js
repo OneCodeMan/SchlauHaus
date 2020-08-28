@@ -17,23 +17,22 @@ class AddSection extends Component {
         <h2 className="formTitle">
           Add Section
         </h2>
-        <Form>
-          <Form.Group controlId="formBasicName">
-            <Form.Label className="sectionLabel">Section Name</Form.Label>
-            <p className="moreInfo">
-              A 'section' can be a room, it is for grouping lights 
-              based on their location. Some example sections can be: 
-              'Kitchen', 'Backyard', 'Living Room', 'Attic'.
-            </p>
-            <br />
-            <Form.Control type="text" placeholder="Enter section name" className="sectionInput" />
-          </Form.Group>
-          <Link to="/lights">
-            <Button variant="primary" type="submit">
+        <form>
+          <label>Section Name</label>
+          <p className="moreInfo">
+            A 'section' can be a room, it is for grouping lights 
+            based on their location. Some example sections can be: 
+            'Kitchen', 'Backyard', 'Living Room', 'Attic'.
+          </p>
+          <br />
+          <input type="text" placeholder="Enter section name" className="sectionInput" required/>
+          <div class="submit-div">
+            <Button type="submit" variant="secondary" className="link">
               Submit
             </Button>
-          </Link>
-        </Form>
+          </div>
+        </form>
+
       </div>
     );
   }

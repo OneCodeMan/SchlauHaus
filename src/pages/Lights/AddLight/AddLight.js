@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './AddLight.css';
-import Form from 'react-bootstrap/Form';
 
 class AddLight extends Component {
   constructor() {
@@ -17,41 +16,37 @@ class AddLight extends Component {
         <h2 className="formTitle">
           Add Light
         </h2>
-        <Form>
-          <Form.Group controlId="formBasicName">
-            <Form.Label className="sectionLabel">Section</Form.Label>
-            <br />
-            <select>
-              <option>Kitchen</option>
-              <option>Backyard</option>
-              <option>Living Room</option>
-            </select>
-          </Form.Group>
-          <Form.Group controlId="formBasicName">
-            <Form.Label className="sectionLabel">Name</Form.Label>
-            <p className="moreInfo">
-              This is the name of your light. A good name would be a name to describe
-              the location of this light in the room. For example, "light above the sink"
-              if a light is in the kitchen section.
-            </p>
-            <br />
-            <Form.Control type="text" placeholder="Enter light name" className="sectionInput" />
-          </Form.Group>
-          <Form.Group controlId="formBasicName">
-            <Form.Label className="sectionLabel">Device</Form.Label>
-            <br />
-            <select>
-              <option>Tatronics LED x83v9</option>
-              <option>DaVINCI 3D Lights x1291fa</option>
-              <option>Harold Krümmer su23</option>
-            </select>
-          </Form.Group>
-          <Link to="/lights">
-            <Button variant="primary" type="submit">
+        <form>
+          <label>Section</label>
+          <br />
+          <select>
+            <option>Kitchen</option>
+            <option>Backyard</option>
+            <option>Living Room</option>
+          </select>
+          <br />
+          <label>Name</label>
+          <p className="moreInfo">
+            This is the name of your light. A good name would be a name to describe
+            the location of this light in the room. For example, "light above the sink"
+            if a light is in the kitchen section.
+          </p>
+          <input type="text" placeholder="Enter light name" className="sectionInput" required />
+          <br />
+          <label>Device</label>
+          <select>
+            <option>Tatronics LED x83v9</option>
+            <option>DaVINCI 3D Lights x1291fa</option>
+            <option>Harold Krümmer su23</option>
+          </select>
+
+          <div class="submit-div">
+            <Button type="submit" variant="secondary" className="link">
               Submit
             </Button>
-          </Link>
-        </Form>
+          </div>
+        </form>
+        
       </div>
     );
   }
