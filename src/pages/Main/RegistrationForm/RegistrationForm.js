@@ -12,35 +12,27 @@ function RegistrationForm() {
           SchlauHaus
         </h1>
        <div className="registration-form">
-        <Form>
-          <Form.Group controlId="formBasicEmail">
-              <Form.Label>First Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter first name.." />
-            </Form.Group>
+        <form>
+          <label>First Name</label>
+          <input type="text" required />
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Last Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter last name" />
-            </Form.Group>
+          <label>Last Name</label>
+          <input type="text" required />
 
-            <Form.Group controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+          <label>Email</label>
+          <input type="email" required />
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Link to="/">
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
-            </Link>
-          </Form>
+          <label>Confirm Email</label>
+          <input type="email" required />
+
+          <label>Password</label>
+          <input type="password" required />
+
+          <label>Confirm Password</label>
+          <input type="password" required />
+
+          <input type="submit" />
+        </form>
        </div>
         <hr />
         <div className="otherFunctions">
